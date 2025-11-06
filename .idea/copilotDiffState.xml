@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/src/test/java/vector/VectorTest.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/test/java/vector/VectorTest.java" />
+              <option name="originalContent" value="package test.java.vector;&#10;&#10;import main.java.vector.Vector;&#10;import org.junit.jupiter.api.*;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;&#10;public class VectorTest {&#10;&#10;    @Test&#10;    public void testConstructorAndGetters() {&#10;        Vector v = new Vector(3, 4);&#10;        assertEquals(3, v.getX(), 0.0001);&#10;        assertEquals(4, v.getY(), 0.0001);&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package test.java.vector;&#10;&#10;import main.java.vector.Vector;&#10;import org.junit.jupiter.api.*;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;&#10;public class VectorTest {&#10;&#10;    @Test&#10;    public void testConstructorAndGetters() {&#10;        Vector v = new Vector(3, 4);&#10;        assertEquals(3, v.getX(), 0.0001);&#10;        assertEquals(4, v.getY(), 0.0001);&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
