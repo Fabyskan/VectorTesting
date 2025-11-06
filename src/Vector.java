@@ -40,10 +40,19 @@ public class Vector {
     }
 
     public Vector add(Vector v) {
+        if(v == null) {
+            throw new IllegalArgumentException("Vector cannot be null");
+        }
         return new Vector(this.x + v.x, this.y + v.y);
     }
 
     public static void fromPolar(double angle, double magnitude){
+        if(angle < 0 || angle > 2*Math.PI) {
+            throw new IllegalArgumentException("Angle out of range");
+        }
+        if(magnitude < 0) {
+            throw new IllegalArgumentException("Magnitude cannot be negative");
+        }
         double x = magnitude * Math.cos(angle);
         double y = magnitude * Math.sin(angle);
         new Vector(x, y);
