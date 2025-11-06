@@ -1,4 +1,4 @@
-package vector;
+package main.java.vector;
 
 public class Vector {
     private double x;
@@ -6,7 +6,13 @@ public class Vector {
 
     public Vector() {}
 
-    public Vector(Vector v) {}
+    public Vector(Vector v) {
+        if(v == null) {
+            throw new IllegalArgumentException("Vector cannot be null");
+        }
+        this.x = v.x;
+        this.y = v.y;
+    }
 
     public Vector(double x, double y) {
         this.x = x;
