@@ -1,3 +1,5 @@
+package vector;
+
 public class Vector {
     private double x;
     private double y;
